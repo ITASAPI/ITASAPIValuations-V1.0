@@ -33,8 +33,6 @@ VERSION: 2.14
 <li>Global Reference Data <b>User Account List</b>: Additional Properties EmailAddress, PhoneNumber and PersonalId are now included in the list,<a href="/#reference/global-reference-data/useraccount-list/list-user-accounts"> Link</a></li>
 <li>Client Reference Data <b>Client Account List</b>: Additional Property AcceptsNettingInstruction now included in the list,<a href="/#reference/client-reference-data/clientaccount-list/list-clientaccounts"> Link</a></li>
 <li>Client Reference Data <b>Client Account</b>: Addittional Property AcceptsNettingInstruction now included in the read,<a href="/#reference/client-reference-data/clientaccount/read-clientaccount"> Link</a></li>
-<li>Client Reference Data <b>Client Account</b>: Addittional Property AcceptsNettingInstruction now included in the Create/Update,<a href="/#reference/client-reference-data/clientaccount/create-update-clientaccount"> Link</a></li>
-<li>Client Reference Data <b>Client Account</b>: Addittional Property AcceptsNettingInstruction now included in the Delta Update,<a href="/#reference/client-reference-data/clientaccount/delta-update-clientaccount"> Link</a></li>
 <li>WIP Reference Data <b>Charter List</b>: Additional Properties AreGoodsFinanced, FinanceBankCli, FinanceBankName, FinanceBankAccount and FinanceId now included in the list,<a href="/#reference/wip-reference-data/charter-list/list-charter"> Link</a></li>
 <li>WIP Reference Data <b>Charter</b>: Additional Properties AreGoodsFinanced, FinanceBank and FinanceId are now included in the read,<a href="/#reference/wip-reference-data/charter/read-charter"> Link</a></li>
 <li>Physicals Reference Data <b>Commodity List</b>: New Properties ReportingGroupCode and CommodityFullCode now included in the list,<a href="/#reference/physicals-reference-data/commodity-list/list-commodities"> Link</a></li>
@@ -192,7 +190,6 @@ Codes relating to the Client Ledger and related endpoints.
 |GroupAccountMember|Is Client a Group Account Memeber|`boolean`|5|||
 |HeadOfFamilyAccountCode|Head of Family Account Code|`string`|10|||
 |EDICode|Account EDI Code|`string`|50|||
-|AcceptsNettingInstruction|Accepts Netting Instruction|`boolean`|5|||
 |<strong>Contact Details</strong>|
 |AddressLine1|Address Line 1|`string`|60|||
 |AddressLine2|Address Line 2|`string`|60|||
@@ -271,7 +268,6 @@ Codes relating to the Client Ledger and related endpoints.
 |GroupAccountMember|Is Client a Group Account Memeber|`boolean`|5|||
 |HeadOfFamilyAccountCode|Head of Family Account Code|`string`|10|||
 |EDICode|Account EDI Code|`string`|50|||
-|AcceptsNettingInstruction|Accepts Netting Instruction|`boolean`|5|||
 |<strong>Contact Details</strong>|
 |AddressLine1|Address Line 1|`string`|60|||
 |AddressLine2|Address Line 2|`string`|60|||
@@ -4577,8 +4573,7 @@ The CommodityFullCode is a five part key made up of the following values seperat
 + GlobalTraderProgramMember: false (boolean)
 + GroupAccountMember: true (boolean)
 + HeadOfFamilyAccountCode: HEAD.P (string)
-+ EDICode: extABCDEF (string) 
-+ AcceptsNettingInstruction: true (boolean)
++ EDICode: extABCDEF (string)
 + AddressLine1: Address Line #1 (string)
 + AddressLine2: Address Line #2 (string) 
 + AddressLine3: Address Line #3 (string) 
@@ -4629,8 +4624,7 @@ The CommodityFullCode is a five part key made up of the following values seperat
 + GlobalTraderProgramMember: false (boolean)
 + GroupAccountMember: true (boolean)
 + HeadOfFamilyAccountCode: HEAD.P (string)
-+ EDICode: extABCDEF (string) 
-+ AcceptsNettingInstruction: true (boolean)
++ EDICode: extABCDEF (string)
 + AddressLine1: Address Line #1 (string)
 + AddressLine2: Address Line #2 (string) 
 + AddressLine3: Address Line #3 (string) 

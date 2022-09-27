@@ -69,7 +69,7 @@ Data endpoints for Contract Valuation
 
 + Parameters
     + TradingEntityId (required, string, `JT`) ... Identify specific trading entity. 
-    + PhysicalTradeId (required, string, `P00004.000`)
+    + PhysicalTradeId (required, string, `P00001.000`)
 
 + Request (application/json)
     + Header
@@ -251,8 +251,8 @@ A multipurpose object used by several endpoints
 + DifferentialValue: 1500 (number)
 + DiscountValue: 4200 (number)
 + PolarisationDetails (PolarisationDetail)
-+ CostValues (array [`500`])
-+ CommissionValues (array [`300`])
++ CostValues: 300 (number)
++ CommissionValues: 200 (number)
 
 ## PolarisationDetail (object)
 + Scale: DOM (string)

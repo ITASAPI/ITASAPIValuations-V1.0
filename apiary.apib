@@ -9,12 +9,12 @@ VERSION: 1.0
 **** Warning: at this point, ITAS API does not support asynchronus or multithreading calls for POST, PUT and PATCH requests. Async or multithreading requests could result in various Error messages, or even a corruption of data in extreme cases and are therefore not supported. ****
 <br />
 <br />
-<strong>Release notes</strong> (18<sup>th</sup> September 2017)
+<strong>Release notes</strong> (XX<sup>th</sup> December 2022)
 
 ## New Endpoints
 
 <ul>
-<li>Accounting-Transactions <b>Transaction Physical Trade</b>: GET Details relevent to a Physical Trade referenced on the Posted and UnPosted Transaction Endpoints, with an emphasis on data useful for external consumers of accounting transactions,<a href="/#reference/accounting-transactions/transaction-physical-trade/read-transaction-physical-trade"> Link</a></li>
+<li>Contract Valuation <b>Contract Valuation</b>: GET Valuation of a Single Trade,<a href="/#reference/contract-valuation"> Link</a></li>
 </ul>
 
 ## Updated Endpoints
@@ -44,8 +44,8 @@ Data endpoints for Contract Valuation
 |Property|Description|Type|Max Length|Notes|Constraint|
 |--------|-----------|----|----------|-----|----------|
 |PhysicalTradeId|Physical Trade ID|`string`|10|||
-|ContractCcyValues|see <b><a href="/#reference/data-object-definitions/contract-currency">Contract Currency</a></b> object|`object`||||
-|PandLCurrencyValues|see <b><a href="/#reference/data-object-definitions/pnl-currency">PnL Currency</a></b> object|`object`||||
+|ContractCcyValues|see <b><a href="/#reference/data-object-definitions/contract-currency-values">Contract Currency Values</a></b> object|`object`||||
+|PandLCurrencyValues|see <b><a href="/#reference/data-object-definitions/pandl-currency-values">PandL Currency Values</a></b> object|`object`||||
 |SingleCurrencyValues|Single Currency Values|`decimal`||||
 |SecondCurrencyValues|Second Currency Values|`decimal`||||
 |FobValue|Fob Value|`decimal`||||
@@ -62,7 +62,7 @@ Data endpoints for Contract Valuation
 |GrossValue|Gross Value|`decimal`||||
 |DifferentialValue|Differential Value|`decimal`||||
 |DiscountValue|Discount Value|`decimal`||||
-|PolarisationDetails|see <b><a href="/#reference/data-object-definitions/pnl-currency">PnL Currency</a></b> object|`object`||||
+|PolarisationDetails|see <b><a href="/#reference/data-object-definitions/polarisation-details">Polarisation Details</a></b> object|`object`||||
 |CostValues|Cost Values|array of `decimal`||||
 |CommissionValues|Commission Values|array of `decimal`||||
 
@@ -98,7 +98,7 @@ List of re-usable Data Objects referenced as `object` types. Not that these endp
 
 ## Contract Currency Values [/ContractCurrencyValues]
 A multipurpose object used by several endpoints
-### ContractCurrencyValues [GET]
+### Contract Currency Values [GET]
 
 |Property|Description|Type|Max Length|Notes|Constraint|
 |--------|-----------|----|----------|-----|----------|
@@ -117,7 +117,7 @@ A multipurpose object used by several endpoints
 
 ## PandL Currency Values [/PandLCurrencyValues]
 A multipurpose object used by several endpoints
-### PndLCurrencyValues [GET]
+### PndL Currency Values [GET]
 
 |Property|Description|Type|Max Length|Notes|Constraint|
 |--------|-----------|----|----------|-----|----------|
@@ -135,7 +135,7 @@ A multipurpose object used by several endpoints
 
 ## Polarisation Details [/PolarisationDetails]
 A multipurpose object used by several endpoints
-### PolarisationDetails [GET]
+### Polarisation Details [GET]
 
 |Property|Description|Type|Max Length|Notes|Constraint|
 |--------|-----------|----|----------|-----|----------|
